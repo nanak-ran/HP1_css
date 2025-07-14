@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+/* top */
+.top {
+  background-image: url(../img/fv1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: calc(100vh - 6.88rem);
+}
+
+.top-wrap__left {
+  position: relative;
+}
+
+.top-wrap__left__ttl {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 380px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-wrap__left__ttl h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.top-wrap__left__ttl p {
+  font-size: 1.56rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* news */
+/* お知らせ */
+.news {
+  background-image: url(../img/top-news.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.news-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+.news-wrap__left {
+  width: 30%;
+}
+
+.news-wrap__left .s-ttl {
+  text-align: center;
+}
+
+.news-btn {
+  width: 12.5rem;
+  margin: 0 auto;
+}
+
+.news-btn a {
+  display: block;
+  width: 100%;
+  text-decoration: unset;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #FADADD;
+  border: solid 5px #fff;
+  border-radius: 50px;
+  color: #707C8C;
+  padding: 1.25rem 0;
+  margin-top: 2.5rem;
+}
+
+.news-btn a:hover {
+  background-color: #fff;
+  border: solid 5px #fadadd;
+  transition: all 0.3s;
+}
+
+.news-wrap__right {
+  width: 60%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.news-wrap__right__list__item {
+  list-style: none;
+  display: flex;
+  border-bottom: solid 1px #000;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.news-wrap__right__list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.news-wrap__right__list__item span {
+  margin-right: 3.12rem;
+}
+
+/* service */
+/* 診療時間 */
+.service-wrap {
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.service-wrap__sche {
+  background-color: #FEF7F8;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.25rem;
+  width: 60%;
+}
+
+.service-wrap__sche table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.service-wrap__sche table tr:nth-of-type(1) {
+  background-color: #FADADD;
+}
+
+.service-wrap__sche table tr:nth-of-type(2) {
+  border-bottom: dotted 1px #000;
+}
+
+.service-wrap__sche table tr th {
+  padding: 1.25rem 50px 1.25rem 1.25rem;
+  font-size: 1.25rem;
+}
+
+.service-wrap__sche table tr td {
+  padding: 1.25rem 0.93rem 1.25rem 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.service-wrap__txt {
+  width: 60%;
+  margin: 3.12rem auto 0;
+  line-height: 1.8;
+  font-size: 0.87rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* お問い合わせ・電話番号 */
+.tel {
+  background-image: url(../img/お問い合わせ背景.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2.18rem 0;
+}
+
+.tel-txt {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-number img {
+  width: 3.12rem;
+  height: 3.12rem;
+  margin-right: 0.93rem;
+}
+
+.phone-number p {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* greet */
+/* 院長からのごあいさつ */
+.greet {
+  padding: 5rem 0;
+}
+
+.greet-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greet-wrap__left {
+  width: 45%;
+  position: relative;
+}
+
+.greet-wrap__left__image {
+  aspect-ratio: 3 /4;
+}
+
+.greet-wrap__left__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -300px;
+  border-radius: 15px;
+}
+
+.greet-wrap__left__txt {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.txt1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.txt2 {
+  font-size: 1.87rem;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 1.25rem;
+}
+
+.txt2 span {
+  margin-left: 0.93rem;
+}
+
+.greet-wrap__right {
+  width: 50%;
+}
+
+.greet-wrap__right__ttl {
+  font-size: 18px;
+  color: #EF7C8E;
+  margin-bottom: 3.12rem;
+}
+
+.greet-wrap__right__txt {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+}
+
+.greet-btn {
+  width: 18.75rem;
+  margin: 0 auto;
+}
+
+.greet-btn a {
+  display: block;
+  width: 100%;
+  text-decoration: unset;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #FADADD;
+  border: solid 5px #fff;
+  border-radius: 50px;
+  color: #707C8C;
+  padding: 1.25rem 0;
+  margin-top: 3.12rem;
+}
+
+.greet-btn a:hover {
+  background-color: #fff;
+  border: solid 5px #fadadd;
+  transition: all 0.3s;
+}
+
+/* about */
+/* 当院について */
+.about {
+  background-color: #F9C7CF;
+  padding: 5rem 0;
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.about-wrap__con img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.about-wrap__con h4 {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.62rem;
+  color: #fff;
+}
+
+.about-wrap__con p {
+  font-size: 0.87rem;
+  color: #fff;
+  font-family: 'Noto Sans JP',sans-serif;
+}
+
+.about-btn {
+  width: 18.75rem;
+  margin: 0 auto;
+}
+
+.about-btn a {
+  display: block;
+  width: 100%;
+  text-decoration: unset;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: solid 5px #FADADD;
+  border-radius: 50px;
+  color: #707C8C;
+  padding: 1.25rem 0;
+  margin-top: 3.12rem;
+}
+
+.about-btn a:hover {
+  background-color: #fadadd;
+  border: solid 5px #fff;
+  transition: all 0.3s;
+}
+
+/* service2 */
+/* 診療内容 */
+.service2 {
+  padding: 5rem;
+}
+
+.service2-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 5%;
+}
+
+.service2-wrap__con {
+  display: flex;
+  flex-direction: column;
+  background-color: #FEF7F8;
+}
+
+.service2-wrap__con img {
+  aspect-ratio: 16 / 9;
+  height: fit-content;
+  margin-bottom: 1.25rem;
+}
+
+.service2-wrap__con h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.62rem 1.25rem;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.service2-wrap__con p {
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 80%;
+  margin: 1.25rem auto;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.service2-btn {
+  width: 18.75rem;
+  margin: 0 auto;
+}
+
+.service2-btn a {
+  display: block;
+  width: 100%;
+  text-decoration: unset;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: solid 5px #FADADD;
+  border-radius: 50px;
+  color: #707C8C;
+  padding: 1.25rem 0;
+  margin-bottom: 1.88rem;
+}
+
+.service2-btn a:hover {
+  background-color: #fadadd;
+  border: solid 5px #fff;
+  transition: all 0.3s;
+}
+
+/* access */
+/* アクセス */
+.access-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.access-wrap__left {
+  width: 40%;
+}
+
+.access-wrap__left img {
+  height: 100%;
+}
+
+.access-wrap__right {
+  width: 50%;
+}
+
+.access-wrap__logo {
+  padding: 1.25rem 2.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.access-wrap__logo .logo-main {
+  font-size: 2.5rem;
+  color: #707C8C;
+  font-weight: 700;
+}
+
+.access-wrap__logo .logo-sub {
+  font-size: 1.25rem;
+  color: #B3D5AC;
+}
+
+.access-wrap__logo .logo-sub span {
+  color: #F6A8B9;
+}
+
+.access-wrap__right__address , .access-wrap__right__parking {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.access-wrap__right__address img , .access-wrap__right__parking img {
+  width: 1.88rem;
+  height: 1.88rem;
+  margin-right: 0.63rem;
+}
+
+.access-wrap__right__address , .access-wrap__right__parking p {
+  font-size: 1.13rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.access-wrap__right__sche {
+  background-color: #FEF7F8;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+
+.access-wrap__right__sche table {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.access-wrap__right__sche table tr:nth-of-type(1) {
+  background-color: #FADADD;
+}
+
+.access-wrap__right__sche table tr:nth-of-type(2) {
+  border-bottom: dotted 1px #000;
+}
+
+.access-wrap__right__sche table tr th {
+  padding: 1.25rem;
+}
+
+.access-wrap__right__sche table tr td {
+  padding: 1.25rem 0.93rem 1.25rem 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+}
+
+.access-wrap__right__txt {
+  line-height: 1.8;
+  font-size: 0.87rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 1.25rem;
+  margin-bottom: 3.13rem;
+}
+
+.access hr {
+  border: none;
+  border-top: 1px dotted #000;
+}
+
+.access-map iframe {
+  display: block;
+  width: 100%;
+}
+
+/* faq */
+/* よくあるご質問 */
+.faq {
+  padding: 5rem 0;
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-wrap__left,
+.faq-wrap__right {
+  width: 48%;
+}
+
+.faq-wrap__list__item {
+  border: solid 4px #707C8C;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 1.25rem;
+}
+
+.faq-wrap__list__item span {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.faq-wrap__list__item::after {
+  content: "＋";
+  color: #EF7C8E;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-wrap__list__item p {
+  padding: 0 1rem 1rem;
+}
+
+.faq-btn {
+  width: 18.75rem;
+  margin: 0 auto;
+}
+
+.faq-btn a {
+  display: block;
+  width: 100%;
+  text-decoration: unset;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #FADADD;
+  border: solid 5px #fff;
+  border-radius: 50px;
+  color: #707C8C;
+  padding: 1.25rem 0;
+  margin-top: 3.12rem;
+}
+
+.faq-btn a:hover {
+  background-color: #fff;
+  border: solid 5px #fadadd;
+  transition: all 0.3s;
+}

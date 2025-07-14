@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  letter-spacing: 1px;
+  word-break: break-all;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+.__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.__inner2 {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 6.88rem;
+  background-color: #FFE8EE;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrap__logo {
+  padding: 1.25rem 2.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-wrap__logo .logo-main {
+  font-size: 2.5rem;
+  color: #707C8C;
+  font-weight: 700;
+}
+
+.header-wrap__logo .logo-sub {
+  font-size: 1.25rem;
+  color: #B3D5AC;
+}
+
+.header-wrap__logo .logo-sub span {
+  color: #F6A8B9;
+}
+
+.header-wrap__box {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrap__box__nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrap__box__nav__list__item {
+  margin-right: 2.5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header-wrap__box__nav__list__item a {
+  position: relative;
+}
+
+.header-wrap__box__nav__list__item a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #F6A8B9;
+  transition: 0.3s ease;
+}
+
+.header-wrap__box__nav__list__item a:hover::after {
+  width: 100%;
+}
+
+.header-wrap__box__tel {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: #EF7C8E;
+  height: 6.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.header-wrap__box__tel .tel-note {
+  font-size: 0.75rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header-wrap__box__tel__top {
+  display: flex;
+  line-height: 1.2;
+}
+
+.header-wrap__box__tel__top .tel-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.header-wrap__box__tel__top img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.31rem;
+}
+
+/* top */
+
+.top-wrap__right {
+  position: relative;
+}
+
+.top-wrap__right img {
+  width: 15.63rem;
+  height: 15.63rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+}
+
+/* news */
+/* topお知らせのタイトル */
+.s-ttl {
+  font-size: 2rem;
+  color: #707C8C;
+  position: relative;
+}
+
+.s-ttl::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  background-color: #CDECC9;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+/* h2 */
+/* topその他のタイトル */
+.f-ttl {
+  font-size: 2rem;
+  color: #707C8C;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.f-ttl::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  background-color: #CDECC9;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+/* footer */
+.footer {
+  background-image: url(../img/footer背景.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  position: relative;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap__left {
+  width: 40%;
+}
+
+.footer-wrap__logo {
+  padding-top: 0;
+  padding-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.footer-wrap__logo .logo-main {
+  font-size: 2.5rem;
+  color: #707C8C;
+  font-weight: 700;
+}
+
+.footer-wrap__logo .logo-sub {
+  font-size: 1.25rem;
+  color: #B3D5AC;
+}
+
+.footer-wrap__logo .logo-sub span {
+  color: #F6A8B9;
+}
+
+.footer-wrap__left__address , .footer-wrap__left__parking {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.footer-wrap__left__address img , .footer-wrap__left__parking img {
+  width: 1.88rem;
+  height: 1.88rem;
+  margin-right: 0.63rem;
+}
+
+.footer-wrap__left__address , .footer-wrap__left__parking p {
+  font-size: 1.13rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.footer-wrap__tel {
+  width: 21.88rem;
+  background-color: #EF7C8E;
+  font-weight: bold;
+  color: #fff;
+  padding: 1.25rem 2.5rem;
+  border-radius: 50px;
+}
+
+.footer-wrap__tel__txt {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer-wrap__tel__phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrap__tel__phone-number img {
+  width: 3.13rem;
+  height: 3.13rem;
+  margin-right: 0.63rem;
+}
+
+.footer-wrap__tel__phone-number p {
+  font-size: 2.25rem;
+}
+
+.footer-wrap__right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-wrap__right__list__item {
+  list-style-type: disc;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.31rem;
+}
+
+.footer-wrap__right__list__item__sub__item {
+  font-size: 0.88rem;
+  margin: 0.63rem 0;
+}
+
+.footer-wrap__right__list__item a:hover , .footer-wrap__right__list__item__sub__item a:hover {
+  opacity: 0.5;
+  color: #EF7C8E;
+}
+
+.footer-copyright {
+  background-color: #FFE8EE;
+  height: 6.25rem;
+}
+
+.footer-copyright p {
+  text-align: center;
+  line-height: 6.25rem;
+  font-weight: 400;
+  font-size: 0.88rem;
+}
+
+.to-top-btn {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background-color: #CDECC9;
+  text-align: center;
+  position: absolute;
+  right: 50px;
+  bottom: -50px;
+  cursor: pointer;
+  line-height: 6.25rem;
+  font-size: 1.63rem;
+  color: #707C8C;
+}
+
+
+
+
+
+
+
+
+

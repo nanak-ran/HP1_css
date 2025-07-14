@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url(../img/fv8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 6.88rem);
+}
+
+.faq {
+  padding: 5rem 0;
+}
+
+.faq-wrap__con__block {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 4px #ccc;
+}
+
+.faq-wrap__con__block p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.faq-wrap__con__block__top {
+  padding: 1.25rem;
+  background-color: #FFE8EE;
+  position: relative;
+}
+
+.faq-wrap__con__block__bottom {
+  padding: 1.56rem 1.25rem;
+}
+
+.bottom-txt {
+  display: flex;
+}
+
+
+.faq-wrap__con__block__top span, .faq-wrap__con__block__bottom .bottom-txt span {
+  font-size: 1.5rem;
+  margin-right: 0.63rem;
+}
+
+.faq-wrap__con__block__bottom .bottom-txt span {
+  color: #EF7C8E;
+}
+
+
+.faq-wrap__con__block__top::after {
+  content: "－";
+  color: #EF7C8E;
+  position: absolute;
+  right: 1rem;
+  top: 35%;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+

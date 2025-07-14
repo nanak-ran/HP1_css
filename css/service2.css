@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url(../img/fv5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 6.88rem);
+}
+
+.tab-wrap__nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.13rem;
+  margin-bottom: 5rem;
+  
+}
+
+.tab-wrap__nav__list__item {
+  width: 30%;
+  text-align: center;
+  border: solid 5px #F6A8B9;
+  border-radius: 15px;
+}
+
+.tab-wrap__nav__list__item a {
+  display: block;
+  transition: 0.3s all;
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+}
+
+.tab-wrap__nav__list__item a:hover {
+  background-color: #F6A8B9;
+  color: #fff;
+}
+
+.tab-wrap__nav__list__item.__now a {
+  background-color: #F6A8B9;
+  color: #fff;
+}
+
+.kids {
+  background-image: url(../img/servicepath.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.kids .f-ttl {
+  color: #fff;
+  
+}
+
+.kids-txt {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.25rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.kids-wrap__textbox {
+  background-color: #fff;
+  padding: 1.56rem 2.19rem;
+  margin-bottom: 5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 15px;
+}
+
+.kids-wrap__textbox h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #707C8C;
+}
+
+.kids-wrap__textbox h3 strong {
+  background: linear-gradient(transparent 70%, rgba(239, 124, 142, 0.7) 30%);
+}
+
+.kids-wrap__textbox p {
+  margin-top: 1.56rem;
+  line-height: 1.5;
+  font-size: 1.13rem;
+}
+
+.kids-wrap__body__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.kids-wrap__body__block:last-of-type {
+  margin-bottom: 0;
+}
+
+.kids-wrap__body__block:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.kids-wrap__body__block__img {
+  width: 40%;
+  aspect-ratio: 7 / 4;
+}
+
+.kids-wrap__body__block__img img {
+  border-radius: 15px;
+}
+
+.kids-wrap__body__block__txt {
+  width: 50%;
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 15px;
+}
+
+.kids-wrap__body__block__txt h4 {
+  text-align: center;
+  color: #707C8C;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.kids-wrap__body__block__txt hr {
+  border: none;
+  border-top: dotted 3px #CDECC9;
+  margin: 1.25rem 0;
+}
+
+.kids-wrap__body__block__txt p {
+  line-height: 1.5;
+}
