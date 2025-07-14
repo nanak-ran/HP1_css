@@ -74,12 +74,13 @@
   color: #707C8C;
   padding: 1.25rem 0;
   margin-top: 2.5rem;
+  transition: all 0.5s ease;
 }
 
 .news-btn a:hover {
   background-color: #fff;
   border: solid 5px #fadadd;
-  transition: all 0.3s;
+  
 }
 
 .news-wrap__right {
@@ -93,6 +94,7 @@
   border-bottom: solid 1px #000;
   margin-bottom: 2.5rem;
   padding-bottom: 1.25rem;
+  color: #555;
 }
 
 .news-wrap__right__list__item:last-of-type {
@@ -178,7 +180,7 @@
   margin-right: 0.93rem;
 }
 
-.phone-number p {
+.phone-number a {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
@@ -217,6 +219,8 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
+  color: #555;
+  text-shadow: 4px 4px 4px #fff;
 }
 
 .txt1 {
@@ -270,12 +274,13 @@
   color: #707C8C;
   padding: 1.25rem 0;
   margin-top: 3.12rem;
+  transition: all 0.5s ease;
 }
 
 .greet-btn a:hover {
   background-color: #fff;
   border: solid 5px #fadadd;
-  transition: all 0.3s;
+  
 }
 
 /* about */
@@ -308,6 +313,7 @@
   font-size: 0.87rem;
   color: #fff;
   font-family: 'Noto Sans JP',sans-serif;
+  line-height: 1.8;
 }
 
 .about-btn {
@@ -329,12 +335,13 @@
   color: #707C8C;
   padding: 1.25rem 0;
   margin-top: 3.12rem;
+  transition: all 0.5s ease;
 }
 
 .about-btn a:hover {
   background-color: #fadadd;
   border: solid 5px #fff;
-  transition: all 0.3s;
+  
 }
 
 /* service2 */
@@ -398,12 +405,12 @@
   color: #707C8C;
   padding: 1.25rem 0;
   margin-bottom: 1.88rem;
+  transition: all 0.5s ease;
 }
 
 .service2-btn a:hover {
   background-color: #fadadd;
   border: solid 5px #fff;
-  transition: all 0.3s;
 }
 
 /* access */
@@ -518,45 +525,107 @@
   padding: 5rem 0;
 }
 
-.faq-wrap {
+.faq-wrap__body {
   display: flex;
   justify-content: space-between;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-.faq-wrap__left,
-.faq-wrap__right {
-  width: 48%;
+.faq-wrap__body__left , .faq-wrap__body__right {
+  width: 49%;
 }
 
-.faq-wrap__list__item {
+.faq-wrap__body__list__item {
+  position: relative;
+  margin-bottom: 1.87rem;
   border: solid 4px #707C8C;
   border-radius: 50px;
-  font-size: 14px;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin-bottom: 1rem;
-  position: relative;
-  padding: 1.25rem;
+  list-style: none;
+  font-size: 0.87rem;
 }
 
-.faq-wrap__list__item span {
-  font-size: 20px;
-  font-weight: bold;
+.faq-wrap__body__list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.faq-wrap__body__list__item__tog {
+  display: none;
+}
+
+.faq-wrap__body__list__item__con {
+  display: flex;
+}
+
+.faq-wrap__body__list__item__tog:checked
++ .faq-wrap__body__list__item__ttl
++ .faq-wrap__body__list__item__con {
+  max-height: 500px;
+  transition: all 1.5s;
+}
+
+.faq-wrap__body__list__item__tog:checked
++ .faq-wrap__body__list__item__ttl::before {
+  transform: rotate(90deg);
+}
+
+.faq-wrap__body__list__item__ttl,
+.faq-wrap__body__list__item__con {
+  transform: translate(0);
+  transition: all 0.3s;
+}
+
+.faq-wrap__body__list__item__ttl {
+  display: block;
+  padding: 0.93rem;
+}
+
+.faq-wrap__body__list__item__ttl span {
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 0.62rem;
 }
 
-
-.faq-wrap__list__item::after {
-  content: "＋";
-  color: #EF7C8E;
+.faq-wrap__body__list__item__ttl::after,
+.faq-wrap__body__list__item__ttl::before {
+  content: "";
   position: absolute;
+  right: 1.37rem;
   top: 1rem;
-  right: 0.5rem;
-  font-size: 1.5rem;
-  transition: transform 0.3s;
+  width: 2.5px;
+  height: 17.5px;
+  background-color: #555;
+  transition: all 0.3s;
 }
 
-.faq-wrap__list__item p {
-  padding: 0 1rem 1rem;
+.faq-wrap__body__list__item__ttl::after {
+  transform: rotate(90deg);
+}
+
+.faq-wrap__body__list__item__con {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-wrap__body__list__item__con span {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 0.62rem;
+  color: #EF7C8E;
+}
+
+.faq-wrap__body__list__item__con p , .faq-wrap__body__list__item__con span {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.faq-wrap__body__list__item__con p {
+  padding-right: 1.25rem;
+}
+
+.faq-wrap__body__list__item__con span {
+  padding-left: 1.25rem;
 }
 
 .faq-btn {
@@ -578,10 +647,10 @@
   color: #707C8C;
   padding: 1.25rem 0;
   margin-top: 3.12rem;
+  transition: all 0.5s ease;
 }
 
 .faq-btn a:hover {
   background-color: #fff;
   border: solid 5px #fadadd;
-  transition: all 0.3s;
 }

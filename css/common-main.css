@@ -42,7 +42,7 @@ li {
 header {
   width: 100%;
   height: 6.88rem;
-  background-color: #FFE8EE;
+  background-color: #ffe8ee;
 }
 
 .header-wrap {
@@ -58,17 +58,17 @@ header {
 
 .header-wrap__logo .logo-main {
   font-size: 2.5rem;
-  color: #707C8C;
+  color: #707c8c;
   font-weight: 700;
 }
 
 .header-wrap__logo .logo-sub {
   font-size: 1.25rem;
-  color: #B3D5AC;
+  color: #b3d5ac;
 }
 
 .header-wrap__logo .logo-sub span {
-  color: #F6A8B9;
+  color: #f6a8b9;
 }
 
 .header-wrap__box {
@@ -97,7 +97,7 @@ header {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #F6A8B9;
+  background-color: #f6a8b9;
   transition: 0.3s ease;
 }
 
@@ -108,7 +108,7 @@ header {
 .header-wrap__box__tel {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  background-color: #EF7C8E;
+  background-color: #ef7c8e;
   height: 6.88rem;
   display: flex;
   align-items: center;
@@ -126,11 +126,13 @@ header {
 .header-wrap__box__tel__top {
   display: flex;
   line-height: 1.2;
+  color: #fff;
 }
 
 .header-wrap__box__tel__top .tel-number {
   font-size: 1.25rem;
   font-weight: 700;
+  color: #fff;
 }
 
 .header-wrap__box__tel__top img {
@@ -157,7 +159,7 @@ header {
 /* topお知らせのタイトル */
 .s-ttl {
   font-size: 2rem;
-  color: #707C8C;
+  color: #707c8c;
   position: relative;
 }
 
@@ -166,7 +168,7 @@ header {
   width: 50px;
   height: 5px;
   position: absolute;
-  background-color: #CDECC9;
+  background-color: #cdecc9;
   left: 50%;
   transform: translateX(-50%);
   top: 40px;
@@ -176,7 +178,7 @@ header {
 /* topその他のタイトル */
 .f-ttl {
   font-size: 2rem;
-  color: #707C8C;
+  color: #707c8c;
   position: relative;
   text-align: center;
   margin-bottom: 50px;
@@ -187,7 +189,7 @@ header {
   width: 50px;
   height: 5px;
   position: absolute;
-  background-color: #CDECC9;
+  background-color: #cdecc9;
   left: 50%;
   transform: translateX(-50%);
   top: 40px;
@@ -225,11 +227,11 @@ header {
 
 .footer-wrap__logo .logo-sub {
   font-size: 1.25rem;
-  color: #B3D5AC;
+  color: #b3d5ac;
 }
 
 .footer-wrap__logo .logo-sub span {
-  color: #F6A8B9;
+  color: #f6a8b9;
 }
 
 .footer-wrap__left__address , .footer-wrap__left__parking {
@@ -251,7 +253,7 @@ header {
 
 .footer-wrap__tel {
   width: 21.88rem;
-  background-color: #EF7C8E;
+  background-color: #ef7c8e;
   font-weight: bold;
   color: #fff;
   padding: 1.25rem 2.5rem;
@@ -275,8 +277,9 @@ header {
   margin-right: 0.63rem;
 }
 
-.footer-wrap__tel__phone-number p {
+.footer-wrap__tel__phone-number a {
   font-size: 2.25rem;
+  color: #fff;
 }
 
 .footer-wrap__right {
@@ -289,21 +292,21 @@ header {
   list-style-type: disc;
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 0.31rem;
+  margin-bottom: 0.62rem;
 }
 
 .footer-wrap__right__list__item__sub__item {
   font-size: 0.88rem;
-  margin: 0.63rem 0;
+  margin: 1.12rem 0;
 }
 
 .footer-wrap__right__list__item a:hover , .footer-wrap__right__list__item__sub__item a:hover {
   opacity: 0.5;
-  color: #EF7C8E;
+  color: #ef7c8e;
 }
 
 .footer-copyright {
-  background-color: #FFE8EE;
+  background-color: #ffe8ee;
   height: 6.25rem;
 }
 
@@ -318,7 +321,7 @@ header {
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
-  background-color: #CDECC9;
+  background-color: #cdecc9;
   text-align: center;
   position: absolute;
   right: 50px;
@@ -326,14 +329,10 @@ header {
   cursor: pointer;
   line-height: 6.25rem;
   font-size: 1.63rem;
-  color: #707C8C;
+  color: #707c8c;
+  transition: all 0.5s ease;
 }
 
-
-
-
-
-
-
-
-
+.to-top-btn:hover {
+  background-color: #f6a8b9;
+}

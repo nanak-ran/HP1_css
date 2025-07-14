@@ -73,7 +73,7 @@
           <div class="header-wrap__box__tel">
             <div class="header-wrap__box__tel__top">
               <img src="img/電話番号のアイコン.png" alt="電話アイコン" />
-              <p class="tel-number">0000-12-3456</p>
+              <a href="tel:0000123456" class="tel-number">0000-12-3456</a>
             </div>
             <p class="tel-note">休診:木曜午後/土曜午後/日祝</p>
           </div>
@@ -110,88 +110,112 @@
 
       <section class="faq" id="faq">
         <div class="faq-wrap __inner2">
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>小児眼科は何歳から診てもらえるのでしょうか？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  小児眼科は、生まれたばかりの赤ちゃんから診察が可能です。目のことで気になることがありましたら、年齢にかかわらずお気軽にご相談ください。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>コンタクトレンズの価格は？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  コンタクトレンズの種類や度数によって価格は異なります。当院では安全性や使いやすさを重視したレンズをご提案しておりますので、詳しくは診察時にご相談ください。お気軽にスタッフまでお声がけください。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>眼鏡をかけすぎると、近視がすすみますか？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  眼鏡をかけすぎたからといって、近視が進むことは基本的にありません。むしろ、見えにくい状態で過ごす方が目に負担がかかるため、視力に合った眼鏡を正しく使うことが大切です。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>目薬は一滴でよいのでしょうか？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  はい、目薬は一滴で十分です。目の中に入る量には限りがあり、二滴以上さしてもあふれてしまいます。さした後は軽く目を閉じて、まばたきを控えるとより効果的です。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>診察は予約制ですか？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  診察は予約優先制となっております。お電話でのご予約をおすすめしております。眼鏡やコンタクトレンズの処方をご希望の場合は、原則として事前のご予約をお願いしております。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-wrap__con__block">
-            <div class="faq-wrap__con__block__top">
-              <p><span>Q.</span>そもそも近視は治るものですか？</p>
-            </div>
-            <div class="faq-wrap__con__block__bottom">
-              <div class="bottom-txt">
-                <span>A.</span>
-                <p>
-                  近視は自然に治ることはありませんが、眼鏡やコンタクトで視力を補うことができます。進行を抑える治療もありますので、ご相談ください。
-                </p>
-              </div>
-            </div>
+          
+          <div class="faq-wrap__body">
+            <ul class="faq-wrap__body__list">
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle1"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle1"
+                  ><span>Q.</span
+                  >小児眼科は何歳から診てもらえるのでしょうか？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    小児眼科は、生まれたばかりの赤ちゃんから診察が可能です。目のことで気になることがありましたら、年齢にかかわらずお気軽にご相談ください。
+                  </p>
+                </div>
+              </li>
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle2"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle2"
+                  ><span>Q.</span
+                  >コンタクトレンズの価格は？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    コンタクトレンズの種類や度数によって価格は異なります。当院では安全性や使いやすさを重視したレンズをご提案しておりますので、詳しくは診察時にご相談ください。お気軽にスタッフまでお声がけください。
+                  </p>
+                </div>
+              </li>
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle3"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle3"
+                  ><span>Q.</span
+                  >眼鏡をかけすぎると、近視がすすみますか？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    眼鏡をかけすぎたからといって、近視が進むことは基本的にありません。むしろ、見えにくい状態で過ごす方が目に負担がかかるため、視力に合った眼鏡を正しく使うことが大切です。
+                  </p>
+                </div>
+              </li>
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle4"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle4"
+                  ><span>Q.</span
+                  >目薬は一滴でよいのでしょうか？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    はい、目薬は一滴で十分です。目の中に入る量には限りがあり、二滴以上さしてもあふれてしまいます。さした後は軽く目を閉じて、まばたきを控えるとより効果的です。
+                  </p>
+                </div>
+              </li>
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle5"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle5"
+                  ><span>Q.</span
+                  >診察は予約制ですか？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    診察は予約優先制となっております。お電話でのご予約をおすすめしております。眼鏡やコンタクトレンズの処方をご希望の場合は、原則として事前のご予約をお願いしております。
+                  </p>
+                </div>
+              </li>
+              <li class="faq-wrap__body__list__item">
+                <input
+                  type="checkbox"
+                  id="toggle6"
+                  class="faq-wrap__body__list__item__tog"
+                />
+                <label class="faq-wrap__body__list__item__ttl" for="toggle6"
+                  ><span>Q.</span
+                  >そもそも近視は治るものですか？</label
+                >
+                <div class="faq-wrap__body__list__item__con">
+                  <span>A.</span>
+                  <p>
+                    近視は自然に治ることはありませんが、眼鏡やコンタクトで視力を補うことができます。進行を抑える治療もありますので、ご相談ください。
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -218,7 +242,7 @@
             <p class="footer-wrap__tel__txt">ご予約・お問い合わせ</p>
             <div class="footer-wrap__tel__phone-number">
               <img src="img/電話番号のアイコン.png" alt="電話アイコン" />
-              <p>0000-12-3456</p>
+              <a href="tel:0000123456">0000-12-3456</a>
             </div>
           </div>
         </div>
