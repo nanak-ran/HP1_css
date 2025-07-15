@@ -180,7 +180,7 @@
   margin-right: 0.93rem;
 }
 
-.phone-number a {
+.phone-number span {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
@@ -618,6 +618,7 @@
 .faq-wrap__body__list__item__con p , .faq-wrap__body__list__item__con span {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  line-height: 1.5;
 }
 
 .faq-wrap__body__list__item__con p {

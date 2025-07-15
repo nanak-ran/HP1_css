@@ -5,7 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 6.88rem);
+  /* height: calc(100vh - 6.88rem); */
+  height: calc(90vh - 6.88rem);
 }
 
 .news-wrap__list {
@@ -32,12 +33,12 @@
 .news-wrap__body__num {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   margin: 5rem auto;
 }
 
 .news-wrap__body__num__item {
-  margin: 3.5% 0.5% 0 0.5%;
+  /* margin: 3.5% 0.5% 0 0.5%; */
   list-style: none;
 }
 

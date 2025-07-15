@@ -5,7 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 6.88rem);
+  /* height: calc(100vh - 6.88rem); */
+  height: calc(90vh - 6.88rem);
 }
 
 .greet {
@@ -28,6 +29,8 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
+  color: #555;
+  text-shadow: 4px 4px 4px #fff;
 }
 
 .greet-wrap__left img {
@@ -187,6 +190,7 @@
   font-weight: bold;
   font-family: 'Noto Sans JP', sans-serif;
   text-shadow: 4px 4px 4px #fff;
+  color: #555;
 }
 
 .doctor-wrap__txt span {

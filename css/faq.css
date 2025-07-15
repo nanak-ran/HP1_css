@@ -5,7 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 6.88rem);
+  /* height: calc(100vh - 6.88rem); */
+  height: calc(90vh - 6.88rem);
 }
 
 .faq {
@@ -24,6 +25,7 @@
   box-shadow: 4px 4px 4px #ccc;
   list-style: none;
   font-size: 1.12rem;
+  border-radius: 15px;
 }
 
 .faq-wrap__body__list__item:last-of-type {
@@ -46,8 +48,16 @@
 }
 
 .faq-wrap__body__list__item__tog:checked
++ .faq-wrap__body__list__item__ttl {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+
+.faq-wrap__body__list__item__tog:checked
 + .faq-wrap__body__list__item__ttl::before {
   transform: rotate(90deg);
+  
 }
 
 .faq-wrap__body__list__item__ttl,
@@ -60,6 +70,9 @@
   display: block;
   background-color: #FFE8EE;
   padding: 1.25rem;
+  border-radius: 15px;
+  transition: border-radius 0.3s ease;
+
 }
 
 .faq-wrap__body__list__item__ttl span {
@@ -89,6 +102,9 @@
   max-height: 0;
   overflow: hidden;
   background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: border-radius 0.3s ease;
 }
 
 .faq-wrap__body__list__item__con span {
@@ -102,6 +118,7 @@
 .faq-wrap__body__list__item__con p , .faq-wrap__body__list__item__con span {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  line-height: 1.8;
 }
 
 .faq-wrap__body__list__item__con p {

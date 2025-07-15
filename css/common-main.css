@@ -111,15 +111,21 @@ header {
   background-color: #ef7c8e;
   height: 6.88rem;
   display: flex;
-  align-items: center;
+  flex-direction: column; 
+  align-items: center; 
   justify-content: center;
-  flex-direction: column;
   text-align: center;
   color: #fff;
+  transition: 0.5s ease;
+}
+
+.header-wrap__box__tel:hover {
+  background-color: #707C8C;
 }
 
 .header-wrap__box__tel .tel-note {
   font-size: 0.75rem;
+  margin-top: 10px;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -129,7 +135,7 @@ header {
   color: #fff;
 }
 
-.header-wrap__box__tel__top .tel-number {
+.header-wrap__box__tel__top span {
   font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
@@ -252,12 +258,18 @@ header {
 }
 
 .footer-wrap__tel {
+  display: block;
   width: 21.88rem;
   background-color: #ef7c8e;
   font-weight: bold;
   color: #fff;
   padding: 1.25rem 2.5rem;
   border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+.footer-wrap__tel:hover {
+  background-color: #707C8C;
 }
 
 .footer-wrap__tel__txt {
@@ -277,9 +289,8 @@ header {
   margin-right: 0.63rem;
 }
 
-.footer-wrap__tel__phone-number a {
+.footer-wrap__tel__phone-number span {
   font-size: 2.25rem;
-  color: #fff;
 }
 
 .footer-wrap__right {
@@ -293,16 +304,19 @@ header {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.62rem;
+  transition: all 0.5s ease;
 }
 
 .footer-wrap__right__list__item__sub__item {
   font-size: 0.88rem;
   margin: 1.12rem 0;
+  transition: all 0.5s ease;
 }
 
 .footer-wrap__right__list__item a:hover , .footer-wrap__right__list__item__sub__item a:hover {
   opacity: 0.5;
   color: #ef7c8e;
+  
 }
 
 .footer-copyright {
